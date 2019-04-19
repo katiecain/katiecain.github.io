@@ -2,9 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-/**
- * Square is a Function Component that returns what should be rendered
- */
 function Square(props) {
     return (
         <button className="square"
@@ -14,9 +11,6 @@ function Square(props) {
     );
 }
 
-/**
- * Parent component - the Board component has full control over the Square component
- */
 class Board extends React.Component {
     renderSquare(i) {
         return (
